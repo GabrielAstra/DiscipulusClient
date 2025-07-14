@@ -10,7 +10,6 @@ interface TeacherCardProps {
 export default function TeacherCard({ teacher }: TeacherCardProps) {
   return (
     <div className="group bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden hover:shadow-xl hover:border-indigo-100 transition-all duration-300 transform hover:-translate-y-1">
-      {/* Header com Avatar e Status */}
       <div className="relative p-6 pb-4">
         <div className="flex items-start justify-between">
           <div className="relative">
@@ -50,7 +49,6 @@ export default function TeacherCard({ teacher }: TeacherCardProps) {
         </div>
       </div>
 
-      {/* Matérias */}
       <div className="px-6 pb-4">
         <div className="flex flex-wrap gap-2">
           {teacher.subjects.slice(0, 3).map((subject, index) => (
@@ -73,7 +71,6 @@ export default function TeacherCard({ teacher }: TeacherCardProps) {
         </div>
       </div>
 
-      {/* Informações Adicionais */}
       <div className="px-6 pb-4 space-y-3">
         <div className="flex items-center justify-between text-sm">
           <div className="flex items-center text-gray-600">
@@ -89,13 +86,11 @@ export default function TeacherCard({ teacher }: TeacherCardProps) {
           </div>
         </div>
 
-        {/* Bio Preview */}
         <p className="text-sm text-gray-600 line-clamp-2 leading-relaxed">
           {teacher.bio.length > 100 ? `${teacher.bio.substring(0, 100)}...` : teacher.bio}
         </p>
       </div>
 
-      {/* Footer com Preço e Ação */}
       <div className="px-6 py-4 bg-gradient-to-r from-gray-50 to-indigo-50 border-t border-gray-100">
         <div className="flex items-center justify-between">
           <div>

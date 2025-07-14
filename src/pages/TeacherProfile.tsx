@@ -95,15 +95,12 @@ export default function TeacherProfile() {
         </div>
 
         <div className="grid lg:grid-cols-3 gap-8">
-          {/* Main Content */}
           <div className="lg:col-span-2 space-y-8">
-            {/* About */}
             <div className="bg-white rounded-xl shadow-sm border border-gray-200 p-6">
               <h2 className="text-xl font-semibold text-gray-900 mb-4">Sobre</h2>
               <p className="text-gray-700 leading-relaxed">{teacher.bio}</p>
             </div>
 
-            {/* Subjects & Expertise */}
             <div className="bg-white rounded-xl shadow-sm border border-gray-200 p-6">
               <h2 className="text-xl font-semibold text-gray-900 mb-4">Matérias e Especialidades</h2>
               <div className="grid sm:grid-cols-2 gap-4">
@@ -116,13 +113,11 @@ export default function TeacherProfile() {
               </div>
             </div>
 
-            {/* Reviews */}
             <div className="bg-white rounded-xl shadow-sm border border-gray-200 p-6">
               <h2 className="text-xl font-semibold text-gray-900 mb-4">
                 Avaliações ({teacher.reviewCount})
               </h2>
               <div className="space-y-4">
-                {/* reviews */}
                 <div className="border-b border-gray-200 pb-4">
                   <div className="flex items-center space-x-2 mb-2">
                     <div className="flex items-center">
@@ -158,7 +153,6 @@ export default function TeacherProfile() {
             </div>
           </div>
 
-          {/* sidebar */}
           <div className="space-y-6">
             <div className="bg-white rounded-xl shadow-sm border border-gray-200 p-6">
               <h3 className="text-lg font-semibold text-gray-900 mb-4">Informações Rápidas</h3>
@@ -209,7 +203,6 @@ export default function TeacherProfile() {
           </div>
         </div>
 
-        {/* Modals */}
         <SchedulingModal
           teacher={teacher}
           isOpen={isSchedulingOpen}

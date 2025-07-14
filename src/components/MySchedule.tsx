@@ -20,7 +20,6 @@ export default function MySchedule() {
   const [showCancelModal, setShowCancelModal] = useState(false);
   const [classToCancel, setClassToCancel] = useState<ScheduledClass | null>(null);
 
-  // Mock data - in a real app, this would come from your backend
   const scheduledClasses: ScheduledClass[] = [
     {
       id: '1',
@@ -123,7 +122,6 @@ export default function MySchedule() {
           </p>
         </div>
 
-        {/* Tabs */}
         <div className="mb-6">
           <div className="border-b border-gray-200">
             <nav className="-mb-px flex space-x-8">
@@ -151,7 +149,6 @@ export default function MySchedule() {
           </div>
         </div>
 
-        {/* Classes List */}
         <div className="space-y-4">
           {activeTab === 'upcoming' && (
             <>
@@ -317,7 +314,6 @@ export default function MySchedule() {
           )}
         </div>
 
-        {/* Cancel Confirmation Modal */}
         {showCancelModal && classToCancel && (
           <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50 p-4">
             <div className="bg-white rounded-2xl max-w-md w-full p-6">
@@ -364,7 +360,6 @@ export default function MySchedule() {
         )}
       </div>
       
-      {/* Click outside to close menu */}
       {openMenuId && (
         <div 
           className="fixed inset-0 z-5" 

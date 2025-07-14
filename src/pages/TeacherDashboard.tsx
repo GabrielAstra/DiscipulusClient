@@ -121,7 +121,6 @@ export default function TeacherDashboard() {
   return (
     <div className="min-h-screen bg-gray-50">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
-        {/* Header */}
         <div className="mb-8">
           <h1 className="text-3xl font-bold text-gray-900 mb-2">Painel do Professor</h1>
           <p className="text-gray-600">
@@ -129,7 +128,6 @@ export default function TeacherDashboard() {
           </p>
         </div>
 
-        {/* Tabs */}
         <div className="mb-8">
           <div className="border-b border-gray-200">
             <nav className="-mb-px flex space-x-8">
@@ -159,10 +157,8 @@ export default function TeacherDashboard() {
           </div>
         </div>
 
-        {/* Profile Tab */}
         {activeTab === 'profile' && (
           <div className="space-y-8">
-            {/* Profile Header */}
             <div className="bg-white rounded-xl shadow-sm border border-gray-200 p-6">
               <div className="flex items-center justify-between mb-6">
                 <h2 className="text-xl font-semibold text-gray-900">Informações Pessoais</h2>
@@ -346,7 +342,6 @@ export default function TeacherDashboard() {
               </div>
             </div>
 
-            {/* Subjects and Availability */}
             <div className="grid md:grid-cols-2 gap-8">
               <div className="bg-white rounded-xl shadow-sm border border-gray-200 p-6">
                 <h3 className="text-lg font-semibold text-gray-900 mb-4">Matérias</h3>
@@ -415,10 +410,8 @@ export default function TeacherDashboard() {
           </div>
         )}
 
-        {/* Wallet Tab */}
         {activeTab === 'wallet' && (
           <div className="space-y-8">
-            {/* Wallet Overview */}
             <div className="grid md:grid-cols-4 gap-6">
               <div className="bg-white rounded-xl shadow-sm border border-gray-200 p-6">
                 <div className="flex items-center justify-between">
@@ -469,7 +462,6 @@ export default function TeacherDashboard() {
               </div>
             </div>
 
-            {/* sessao de saque */}
             <div className="bg-white rounded-xl shadow-sm border border-gray-200 p-6">
               <div className="flex items-center justify-between mb-6">
                 <h3 className="text-lg font-semibold text-gray-900">Sacar Dinheiro</h3>
@@ -485,7 +477,6 @@ export default function TeacherDashboard() {
               </p>
             </div>
 
-            {/* transacoes */}
             <div className="bg-white rounded-xl shadow-sm border border-gray-200 p-6">
               <h3 className="text-lg font-semibold text-gray-900 mb-6">Histórico de Transações</h3>
               <div className="space-y-4">
@@ -527,7 +518,6 @@ export default function TeacherDashboard() {
           </div>
         )}
 
-        {/* modal de saque */}
         {showWithdrawModal && (
           <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50 p-4">
             <div className="bg-white rounded-2xl max-w-md w-full p-6">
